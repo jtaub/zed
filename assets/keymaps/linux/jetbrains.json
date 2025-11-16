@@ -4,6 +4,8 @@
       "ctrl-alt-s": "zed::OpenSettingsFile",
       "ctrl-{": "pane::ActivatePreviousItem",
       "ctrl-}": "pane::ActivateNextItem",
+      "ctrl-tab": "pane::ActivateNextItem",
+      "ctrl-shift-tab": "pane::ActivatePreviousItem",
       "shift-escape": null, // Unmap workspace::zoom
       "ctrl-f2": "debugger::Stop",
       "f6": "debugger::Pause",
@@ -11,6 +13,7 @@
       "f8": "debugger::StepOver",
       "shift-f8": "debugger::StepOut",
       "f9": "debugger::Continue",
+      "shift-f9": "debugger::Start",
       "alt-shift-f9": "debugger::Start"
     }
   },
@@ -54,6 +57,9 @@
       "ctrl-space": "editor::ShowCompletions",
       "f2": "editor::GoToDiagnostic",
       "shift-f2": "editor::GoToPreviousDiagnostic",
+      "f3": "search::SelectNextMatch",
+      "shift-f3": "search::SelectPreviousMatch",
+      "f4": "editor::GoToDefinition",
       "ctrl-alt-shift-down": "editor::GoToHunk",
       "ctrl-alt-shift-up": "editor::GoToPreviousHunk",
       "ctrl-alt-z": "git::Restore",
@@ -61,6 +67,7 @@
       "ctrl-end": "editor::MoveToEnd",
       "ctrl-shift-home": "editor::SelectToBeginning",
       "ctrl-shift-end": "editor::SelectToEnd",
+      "ctrl-f4": "pane::CloseActiveItem",
       "ctrl-f8": "editor::ToggleBreakpoint",
       "ctrl-shift-f8": "editor::EditLogBreakpoint",
       "ctrl-shift-u": "editor::ToggleCase"
@@ -71,6 +78,7 @@
     "bindings": {
       "ctrl-f12": "outline::Toggle",
       "ctrl-f": "buffer_search::Deploy",
+      "ctrl-h": ["buffer_search::Deploy", { "replace_enabled": true }],
       "ctrl-r": ["buffer_search::Deploy", { "replace_enabled": true }],
       "ctrl-shift-n": "file_finder::Toggle",
       "ctrl-g": "go_to_line::Toggle",
@@ -97,8 +105,10 @@
     "bindings": {
       "ctrl-shift-f12": "workspace::ToggleAllDocks",
       "ctrl-shift-f": "pane::DeploySearch",
+      "ctrl-shift-h": ["pane::DeploySearch", { "replace_enabled": true }],
       "ctrl-shift-r": ["pane::DeploySearch", { "replace_enabled": true }],
       "ctrl-shift-t": "pane::ReopenClosedItem",
+      "shift-f10": "task::Spawn",
       "alt-shift-f10": "task::Spawn",
       "ctrl-e": "file_finder::Toggle",
       // "ctrl-k": "git_panel::ToggleFocus", // bug: This should also focus commit editor

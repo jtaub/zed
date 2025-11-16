@@ -3,6 +3,8 @@
     "bindings": {
       "cmd-{": "pane::ActivatePreviousItem",
       "cmd-}": "pane::ActivateNextItem",
+      "ctrl-tab": "pane::ActivateNextItem",
+      "ctrl-shift-tab": "pane::ActivatePreviousItem",
       "cmd-0": "git_panel::ToggleFocus", // overrides `cmd-0` zoom reset
       "shift-escape": null, // Unmap workspace::zoom
       "ctrl-f2": "debugger::Stop",
@@ -11,6 +13,7 @@
       "f8": "debugger::StepOver",
       "shift-f8": "debugger::StepOut",
       "f9": "debugger::Continue",
+      "shift-f9": "debugger::Start",
       "alt-shift-f9": "debugger::Start"
     }
   },
@@ -53,12 +56,16 @@
       "ctrl-space": "editor::ShowCompletions",
       "f2": "editor::GoToDiagnostic",
       "shift-f2": "editor::GoToPreviousDiagnostic",
+      "f3": "search::SelectNextMatch",
+      "shift-f3": "search::SelectPreviousMatch",
+      "f4": "editor::GoToDefinition",
       "ctrl-alt-shift-down": "editor::GoToHunk",
       "ctrl-alt-shift-up": "editor::GoToPreviousHunk",
       "cmd-home": "editor::MoveToBeginning",
       "cmd-end": "editor::MoveToEnd",
       "cmd-shift-home": "editor::SelectToBeginning",
       "cmd-shift-end": "editor::SelectToEnd",
+      "cmd-w": "pane::CloseActiveItem",
       "ctrl-f8": "editor::ToggleBreakpoint",
       "ctrl-shift-f8": "editor::EditLogBreakpoint",
       "cmd-shift-u": "editor::ToggleCase"
@@ -70,6 +77,7 @@
       "cmd-f12": "outline::Toggle",
       "cmd-f": "buffer_search::Deploy",
       "cmd-r": ["buffer_search::Deploy", { "replace_enabled": true }],
+      "cmd-alt-f": ["buffer_search::Deploy", { "replace_enabled": true }],
       "cmd-shift-o": "file_finder::Toggle",
       "cmd-l": "go_to_line::Toggle",
       "alt-enter": "editor::ToggleCodeActions"
@@ -101,6 +109,7 @@
       "cmd-shift-f": "pane::DeploySearch",
       "cmd-shift-r": ["pane::DeploySearch", { "replace_enabled": true }],
       "cmd-shift-t": "pane::ReopenClosedItem",
+      "shift-f10": "task::Spawn",
       "ctrl-alt-r": "task::Spawn",
       "cmd-e": "file_finder::Toggle",
       // "cmd-k": "git_panel::ToggleFocus", // bug: This should also focus commit editor
