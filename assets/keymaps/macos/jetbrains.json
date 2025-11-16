@@ -65,6 +65,7 @@
     "context": "Editor && mode == full",
     "bindings": {
       "cmd-f12": "outline::Toggle",
+      "cmd-f": "buffer_search::Deploy",
       "cmd-r": ["buffer_search::Deploy", { "replace_enabled": true }],
       "cmd-shift-o": "file_finder::Toggle",
       "cmd-l": "go_to_line::Toggle",
@@ -94,6 +95,7 @@
     "context": "Workspace",
     "bindings": {
       "cmd-shift-f12": "workspace::ToggleAllDocks",
+      "cmd-shift-f": "pane::DeploySearch",
       "cmd-shift-r": ["pane::DeploySearch", { "replace_enabled": true }],
       "ctrl-alt-r": "task::Spawn",
       "cmd-e": "file_finder::Toggle",
