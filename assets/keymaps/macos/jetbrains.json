@@ -45,9 +45,12 @@
       "alt-f7": "editor::FindAllReferences",
       "cmd-alt-f7": "editor::FindAllReferences",
       "cmd-b": "editor::GoToDefinition", // Conflicts with workspace::ToggleLeftDock
-      "cmd-alt-b": "editor::GoToDefinitionSplit",
+      "cmd-alt-b": "editor::GoToImplementation",
       "cmd-shift-b": "editor::GoToTypeDefinition",
       "cmd-alt-shift-b": "editor::GoToTypeDefinitionSplit",
+      "ctrl-j": "editor::Hover",
+      "cmd-p": "editor::ShowSignatureHelp",
+      "ctrl-space": "editor::ShowCompletions",
       "f2": "editor::GoToDiagnostic",
       "shift-f2": "editor::GoToPreviousDiagnostic",
       "ctrl-alt-shift-down": "editor::GoToHunk",
@@ -97,6 +100,7 @@
       "cmd-shift-f12": "workspace::ToggleAllDocks",
       "cmd-shift-f": "pane::DeploySearch",
       "cmd-shift-r": ["pane::DeploySearch", { "replace_enabled": true }],
+      "cmd-shift-t": "pane::ReopenClosedItem",
       "ctrl-alt-r": "task::Spawn",
       "cmd-e": "file_finder::Toggle",
       // "cmd-k": "git_panel::ToggleFocus", // bug: This should also focus commit editor
