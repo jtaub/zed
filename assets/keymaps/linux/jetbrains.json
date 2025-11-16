@@ -108,11 +108,11 @@
       "ctrl-shift-f": "pane::DeploySearch",
       "ctrl-shift-h": ["pane::DeploySearch", { "replace_enabled": true }],
       "ctrl-shift-r": ["pane::DeploySearch", { "replace_enabled": true }],
-      "ctrl-shift-t": "pane::ReopenClosedItem",
+      "ctrl-f5": "task::Rerun",
       "shift-f10": "task::Spawn",
       "alt-shift-f10": "task::Spawn",
       "ctrl-e": "file_finder::Toggle",
-      // "ctrl-k": "git_panel::ToggleFocus", // bug: This should also focus commit editor
+      "ctrl-k": "git_panel::ToggleFocus", // bug: This should also focus commit editor
       "ctrl-n": "project_symbols::Toggle",
       "ctrl-shift-n": "file_finder::Toggle",
       "ctrl-shift-a": "command_palette::Toggle",
