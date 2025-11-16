@@ -76,6 +76,7 @@
   {
     "context": "Editor && mode == full",
     "bindings": {
+      "ctrl-\\": "assistant::InlineAssist",
       "ctrl-f12": "outline::Toggle",
       "ctrl-f": "buffer_search::Deploy",
       "ctrl-h": ["buffer_search::Deploy", { "replace_enabled": true }],
